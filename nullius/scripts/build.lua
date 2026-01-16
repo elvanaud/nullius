@@ -80,12 +80,13 @@ function entity_died(event)
   entity_removed(event.entity, true)
 end
 function entity_destroyed(event)
-  if (script_kill or (event.unit_number == nil)) then return end
-  if (destroyed_stirling_engine(event.unit_number)) then return end
-  if (destroyed_wind_turbine(event.unit_number)) then return end
-  if (remove_beacon(event.unit_number)) then return end
-  if (remove_turbine(event.unit_number)) then return end
-  if (remove_transmitter(event.unit_number)) then return end
+  if (script_kill or (event.type ~= defines.target_type.entity)) then return end
+  local unit_number = event.useful_id
+  if (destroyed_stirling_engine(unit_number)) then return end
+  if (destroyed_wind_turbine(unit_number)) then return end
+  if (remove_beacon(unit_number)) then return end
+  if (remove_turbine(unit_number)) then return end
+  if (remove_transmitter(unit_number)) then return end
 end
 
 
