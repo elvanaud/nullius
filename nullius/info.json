@@ -9,9 +9,9 @@
   "dependencies": [
     "base >= 2.0.72",
     "alien-biomes >= 0.7.4",
-	"angelsrefininggraphics >= 1.0.0",
-    "angelssmeltinggraphics >= 1.0.0",
-    "angelspetrochemgraphics >= 1.0.0",
+	"angelsrefininggraphics = 1.0.0",
+    "angelssmeltinggraphics = 1.0.0",
+    "angelspetrochemgraphics = 1.0.0",
     "boblogistics >= 2.0.2",
     "? RecipeBook >= 4.0.2",
     "? underground-pipe-pack >= 1.1.2",
